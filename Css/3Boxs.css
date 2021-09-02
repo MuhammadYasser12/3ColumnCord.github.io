@@ -1,0 +1,124 @@
+/* Variables */
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --backgroundheadingsbuttons: hsl(0, 0%, 95%);
+}
+/* ###################################################### */
+/* Start Golbal Rules */
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+}
+
+.padding {
+  padding: 30px 50px;
+}
+
+h3 {
+  color: var(--backgroundheadingsbuttons);
+  font-size: 25px;
+  padding: 30px 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+p {
+  color: var(--paragraphs);
+}
+
+input {
+  padding: 10px 20px;
+  margin-top: 70px;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  input {
+    margin-top: 20px;
+  }
+}
+
+/* End Golbal Rules */
+
+/* ################################################# */
+
+/* Main */
+.main {
+  height: 100vh;
+  background-color: var(--backgroundheadingsbuttons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    height: 180vh;
+  }
+}
+
+/* ################################################ */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 60%;
+}
+/* Container Media */
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* Left Box */
+.Lbox {
+  background-color: var(--Brightorange);
+}
+
+.Lbox input {
+  color: var(--Brightorange);
+}
+
+input:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* Mid Box */
+.Mbox {
+  background-color: var(--Darkcyan);
+}
+
+.Mbox input {
+  color: var(--Darkcyan);
+}
+
+input:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* Right Box */
+.Rbox {
+  background-color: var(--Verydarkcyan);
+}
+
+.Rbox input {
+  color: var(--Verydarkcyan);
+}
+
+input:hover {
+  background-color: transparent;
+  color: white;
+}
